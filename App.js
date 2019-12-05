@@ -25,7 +25,7 @@ import {
 import { DeviceEventEmitter } from 'react-native'
 import Beacons from 'react-native-beacons-manager'
 
-export default class MyComponent extends Component {
+class App extends Component {
   componentDidMount(){ 
     // Define a region which can be identifier + uuid,
     // identifier + uuid + major or identifier + uuid + major + minor
@@ -113,4 +113,6 @@ const styles = StyleSheet.create({
     textAlign: 'right',
   },
 });
+
+export default App;
 
